@@ -1,0 +1,75 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+.wrapper{
+	position: relative;
+	width: 900px;
+	height: 633px;
+	font-family: Arial;
+	font-size: 13px;
+	/*border: 1px solid red;*/
+	margin: 0px auto;
+}
+.wrapper .side-bar{
+	position: absolute;
+	width: 900px;
+	height: 13px;
+	line-height: 13px;
+	right: 0px;
+	top: 0px;
+	font-weight: 700;
+	/*border: 1px solid black;*/
+	text-align: right;
+}
+.wrapper .side-bar .bar-item{
+	/*border: 1px solid black;*/
+	margin-left: 10px; 
+	text-decoration: underline;
+}
+.wrapper .img-box #i{
+	width: 270px;
+	height: 129px;
+	/*border: 1px solid black;*/
+}
+.wrapper .img-box{
+	position: absolute;
+	margin: 100px 315px;
+}
+.wrapper .input-box #s{
+	width: 495px ;
+	height: 30px;
+}
+.wrapper .input-box{
+	position: absolute;
+	width: 570px;
+	top: 250px;
+	left: 175px;
+	height: 33px;
+	border: 1px solid black;
+	float: left;
+	background-color: #3385ff;
+}
+.wrapper .input-box .input-item1{
+	display: inline-block;
+}
+.wrapper .input-box .input-item2{
+	display: inline-block;
+	font-size: 16px;
+	color: #fff;
+}
+.wrapper .bottom-box{
+	position: absolute;
+	top: 580px;
+	left: 170px;
+	text-align: center;
+
+}
+.wrapper .bottom-box .bt-item{
+	padding: 10px;
+	color: #999;
+}
+.wrapper .bottom-box .p{
+	padding: 5px;
+	color: #999;
+}
