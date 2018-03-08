@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="index.css">
+	<title>轮播图</title>
+</head>
+<body>
+	<div class="wrapper">
+		<ul class="box">
+			<li class="box-item">
+				<img src="./images/1.jpg" alt="">
+			</li>
+			<li class="box-item">
+				<img src="./images/2.jpg" alt="">
+			</li>
+			<li class="box-item">
+				<img src="./images/3.jpg" alt="">
+			</li>
+			<li class="box-item">
+				<img src="./images/4.jpg" alt="">
+			</li>
+			<li class="box-item">
+				<img src="./images/1.jpg" alt="">
+			</li>
+		</ul>
+		<div class="btn leftBtn"><</div>
+		<div class="btn rightBtn">></div>
+		<div class="boxIndex">
+			<span class="active"></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+
+	
+	<script src="move.js"></script>
+	<script>
+		var timer = null;
+		var box = document.getElementsByClassName('box')[0];
+		// console.log(box);
+		var moveWidth = box.children[0].offsetWidth;
+		var num = box.children.length - 1;
+		var leftBtn = document.getElementsByClassName('btn')[0];
+		var rightBtn = document.getElementsByClassName('btn')[1];
+		var lock = true;
+		var sIndex = 0;
+		var boxIndex = document.getElementsByClassName('boxIndex')[0];
+		var oSpanArr = boxIndex.getElementsByTagName('span');
+
+		leftBtn.onclick = function () {
+			autoMove('right->left');
+		}
+		rightBtn.onclick = function () {
+			autoMove('left->right');
+		}
+		for(var i = 0; i < oSpanArr.length; i ++) {
+			(function (myIndex) {
+				oSpanArr[i].onclick = function () {
+				lock = false;
+				clearTimeout(timer);
+				index = myIndex;
+				startMove(box, {left: - index * moveWidth}, function () {
+					lock = true;
+					changeIndex(index);
+					timer = setTimeout(autoMove, 1500);
+				})
+			}
+			})(i);
+		}
+		// boxIndex.addEventListener('click',function (e) {
+		// 	var event = e || window.event;
+		// 	var target = event.target || event.srcElement;
+
+		// },false)
+		function autoMove(direction) {
+			if(lock){
+				lock = false;
+					clearTimeout(timer);
+				if(!direction || direction == 'left->right'){
+					sIndex ++;
+					startMove(box, {left: box.offsetLeft - moveWidth}, function () {
+						if(box.offsetLeft <= - num * moveWidth) {
+							box.style.left = '0px';
+							sIndex = 0;
+						}
+						timer = setTimeout(autoMove, 1500);
+						lock = true;
+						changeIndex(sIndex);
+					});
+				}else if(direction == 'right->left') {
+					if(box.offsetLeft == 0){
+						sIndex = num;
+						box.style.left = - num * moveWidth + 'px';
+					}
+					sIndex --;
+					startMove(box, {left: box.offsetLeft + moveWidth}, function () {
+						if(box.offsetLeft == 0){
+							box.style.left = - num * moveWidth + 'px';
+							sIndex = num;
+						}
+						timer = setTimeout(autoMove, 1500);
+						lock = true;
+						changeIndex(sIndex);
+					})
+				}
+			}
+			
+		}
+
+		function changeIndex(index) {
+			for(var j = 0; j < oSpanArr.length; j++) {
+				oSpanArr[j].classList.remove('active');
+				if(index == j) {
+					oSpanArr[j].classList.add('active');
+				}
+			} 
+		}
+		timer = setTimeout(autoMove, 1500);	
+	</script>
+</body>
+</html>
