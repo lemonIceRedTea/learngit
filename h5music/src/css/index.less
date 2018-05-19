@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body {
+   height: 100%;
+   width: 100%;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    padding-top: 50px;
+    .songImg {
+        width: 50%;
+        height: 0;
+        padding-top: 50%;
+        position: relative;
+        margin: 0 auto;
+        .imgWrapper {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .songInfo {
+        width: 100%;
+        height: 126px;
+        text-align: center;
+        margin-top: 40px;
+        .songName {
+            font-size: 24px;
+            line-height: 36px;
+            margin-bottom: 8px;
+            color: rgba(255, 255, 255, .6);
+        }
+        .singer, .author {
+            font-size: 14px;
+            line-height: 18px;
+            margin-top: 6px;
+            color: rgba(255, 255, 255, .86);
+        }
+    }
+    .pro {
+        width: 100%;
+        height: 40px;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        line-height: 40px;
+        align-items: center;
+        .curTime, .endTime {
+            width: 50px;
+            height: 100%;
+            text-align: center;
+            color: rgba(255, 255, 255, .9);
+        }
+        .processor {
+            flex: 1;
+            height: 100%;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            .pro-bottom, .pro-top {
+                height: 1px;
+                width: 100%;
+                position: absolute;
+                top: 20px;
+            }
+            .pro-bottom {
+                background-color : rgba(255,255,255,.6);
+            }
+            .pro-top {
+                position: relative;
+                background-color : rgba(255,255,255,.86);
+                transform: translateX(-100%);
+                .slider-pointer {
+                    width: 21px;
+                    height: 21px;
+                    position: absolute;
+                    right: -15px;
+                    top : -10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    &::after{
+                        content: '';
+                        display: block;
+                        height: 8px;
+                        width: 8px;
+                        background-color : #fff;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+    .control {
+        position: absolute;
+        bottom: 0;
+        height: 60px;
+        width: 100%;
+        display: flex;
+        background-color: rgba(0, 0, 0, .2);
+        .btn-control {
+            flex: 1;
+            background-size: 25px 25px;
+            background-repeat: no-repeat;
+            background-position: 50%;
+        }
+        .btn-like {
+            background-image: url('../images/icon-like.png');
+            &.liking {
+                background-image: url('../images/icon-like-solid.png');
+            }
+        }
+        .btn-pre {
+            background-image: url('../images/icon-prev.png');
+        }
+        .btn-play {
+            background-image: url('../images/icon-play.png');
+            &.play {
+                background-image: url('../images/icon-pause.png');
+            }
+        }
+        .btn-next {
+            background-image: url('../images/icon-next.png');
+        }
+        .btn-songlist {
+            background-image: url('../images/icon-playlist.png');
+        }
+    }
+    .songlist {
+        position: absolute;
+        bottom: 60px;
+        width: 100%;
+        background-color: #fff;
+        display: none;
+        .play-header {
+            font-size: 18px;
+            line-height: 36px;
+            text-align: left;
+            color: #000;
+            border-bottom: 1px dashed #ccc;
+        }
+        .play-list {
+            width: 100%;
+            overflow: hidden;
+            li{
+                padding: 5px;
+                width: 100%;
+                font-size: 14px;
+                line-height: 26px;
+                color: #000;
+                list-style: none;
+                display: inline-block;
+                em{
+                    float: left;
+                }
+                .right {
+                    margin-right: 50px;
+                    float: right;
+                }
+            }
+            
+        }
+        &.show {
+            display: block;
+        }
+    }
+}
