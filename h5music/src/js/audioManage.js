@@ -16,7 +16,7 @@
             $scope.find('.btn-play').removeClass('play');
         },
         setSrc: function (src) {
-            this.audio.src = src;
+            this.audio.src = '../../' + src;
             this.audio.load();
         },
         jumpTo: function (time) {

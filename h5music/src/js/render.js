@@ -22,7 +22,7 @@
     }
     
     root.render = function (data) {
-        renderImg(data.image);
+        renderImg('../../' + data.image);
         renderInfo(data);
         renderIsLike(data.isLike);
     }

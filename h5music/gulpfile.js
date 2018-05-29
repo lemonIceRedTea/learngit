@@ -46,11 +46,11 @@ gulp.task("watch",function(){
     gulp.watch(folder.src + "css/*",["css"]);
 })
 
-gulp.task("server",function(){
-    connect.server({
-        port : "8081",
-        livereload : true
-    });
-})
+// gulp.task("server",function(){
+//     connect.server({
+//         port : "8081",
+//         livereload : true
+//     });
+// })
 
-gulp.task("default", ["images", "html", "css", "js","watch", "server"], function () {});
+gulp.task("default", ["images", "html", "css", "js","watch"], function () {});
