@@ -1,0 +1,110 @@
+.movieItem {
+  display: flex;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  &:nth-child(n + 2) {
+    border-top: 1px solid rgb(226,226,226);
+  }
+  &__avatar {
+    width: 65px;
+    height: 96px;
+    position: relative;
+    background-color: transparent;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #eeeeee;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &__info {
+    margin-left: 11px;
+    flex: 1;
+  }
+  &__name {
+    font-size: 16px;
+    color: #000000;
+    font-weight: bold;
+    height: 24px;
+    line-height: 24px;
+  }
+  &__rating {
+    font-size: 10px;
+    color: #323332;
+    font-weight: 400;
+    height: 18px;
+    margin-top: 5px;
+    line-height: 18px;
+  }
+  &__score {
+    font-size: 14px;
+    height: 18px;
+    line-height: 18px;
+    color: #ffa54b;
+  }
+  &__director,
+  &__actor {
+    font-size: 12px;
+    color: #777777;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 4px;
+  }
+  &__actor {
+    margin: 1px 0 5px;
+  }
+  &__tags {
+    &--red,
+    &--blue {
+      height: 14px;
+      line-height: 14px;
+      font-size: 10px;
+      padding: 1px 2px;
+      display: inline-block;
+      text-align: center;
+      border-radius: 3px;
+      margin-right: 4px;
+    }
+    &--red {
+      color: rgb(255, 78, 102);
+      border: 1px solid rgb(255, 78, 102);
+    }
+    &--blue {
+      color: rgb(51, 156, 237);
+      border: 1px solid rgb(51, 156, 237);
+    }
+  }
+  &__btn {
+    width: 50px;
+    text-align: center;
+    margin-right: 15px;
+    align-self: center;
+    &--buy {
+      width: 50px;
+      height: 28px;
+      border-radius: 14px;
+      font-size: 12px;
+      line-height: 28px;
+      color: #ffffff;
+      padding: 0;
+      margin: 0;
+      background-color: rgb(255, 91, 115);
+      border: 1px solid transparent;  //自定义边框
+      outline: none;    //消除默认点击蓝色边框效果
+    }
+    &--text {
+      margin-top: 7px;
+      font-size: 9px;
+      color: #999999;
+    }
+  }
+}

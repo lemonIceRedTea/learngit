@@ -1,0 +1,97 @@
+.movieComment__tagsBar {
+  display: flex;
+  flex-wrap: wrap; }
+
+.movieComment__tag {
+  font-size: 14px;
+  height: 28px;
+  line-height: 28px;
+  padding: 0 15px;
+  border-radius: 14px;
+  margin-right: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #bebebe;
+  color: #333333; }
+
+.movieComment__tag--active {
+  border: 1px solid #ef819e;
+  color: #ef819e; }
+
+.movieComment__commentList {
+  margin: 0;
+  padding: 14px 0 0 6px; }
+  .movieComment__commentList .commentItem {
+    padding-bottom: 30px; }
+    .movieComment__commentList .commentItem__userInfo {
+      display: flex; }
+    .movieComment__commentList .commentItem__userIcon {
+      width: 50px;
+      height: 50px;
+      background-image: url("/source/movie/asset1.jpeg");
+      background-color: transparent;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 50%; }
+    .movieComment__commentList .commentItem__user {
+      flex: 1;
+      margin-left: 20px;
+      align-self: center; }
+    .movieComment__commentList .commentItem____userName {
+      display: block;
+      height: 18px;
+      line-height: 18px;
+      font-size: 12px;
+      font-weight: bold;
+      color: #000000; }
+    .movieComment__commentList .commentItem__moreOpt {
+      float: right;
+      height: 18px;
+      line-height: 18px;
+      font-size: 12px;
+      font-weight: bold;
+      color: #999999; }
+    .movieComment__commentList .commentItem__star {
+      margin-top: 5px;
+      height: 12px;
+      display: inline-block; }
+    .movieComment__commentList .commentItem__starScore {
+      font-size: 14px;
+      line-height: 14px;
+      height: 14px;
+      font-weight: bold;
+      color: #f2a95d; }
+    .movieComment__commentList .commentItem__comment {
+      margin-top: 9px;
+      text-align: justify;
+      font-size: 14px;
+      line-height: 24px;
+      color: #545454; }
+    .movieComment__commentList .commentItem__footer {
+      height: 16px;
+      margin-top: 5px; }
+    .movieComment__commentList .commentItem__date {
+      font-size: 12px;
+      line-height: 16px;
+      color: #bcbcbc;
+      vertical-align: middle; }
+    .movieComment__commentList .commentItem__support, .movieComment__commentList .commentItem__message {
+      margin-left: 12px;
+      display: inline-block;
+      float: right; }
+      .movieComment__commentList .commentItem__support i, .movieComment__commentList .commentItem__message i {
+        display: inline-block;
+        vertical-align: middle;
+        width: 16px;
+        height: 16px;
+        background: transparent url("../../../icons/zan-o.svg") center/cover no-repeat; }
+      .movieComment__commentList .commentItem__support span, .movieComment__commentList .commentItem__message span {
+        display: inline-block;
+        margin-left: 5px;
+        height: 16px;
+        line-height: 16px;
+        vertical-align: middle; }
+    .movieComment__commentList .commentItem__support--zan i {
+      background: transparent url("../../../icons/zan-solid.svg") center/cover no-repeat; }
+    .movieComment__commentList .commentItem__message i {
+      background: transparent url("../../../icons/user.png") center/cover no-repeat; }

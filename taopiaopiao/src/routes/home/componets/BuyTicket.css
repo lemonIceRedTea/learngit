@@ -1,0 +1,114 @@
+.buyTicket {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  padding-bottom: 166px;
+  overflow: scroll;
+  background-color: #ffffff; }
+  .buyTicket__header {
+    background-color: #999999; }
+  .buyTicket__info {
+    padding: 16px 0 16px 16px;
+    border-bottom: 1px solid #e2e2e2; }
+  .buyTicket__name {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 16px;
+    height: 16px;
+    color: #000000; }
+  .buyTicket__time {
+    font-size: 12px;
+    line-height: 14px;
+    height: 14px;
+    color: #666666;
+    margin-top: 12px; }
+  .buyTicket__hintWrap {
+    border-bottom: 1px solid #e2e2e2;
+    text-align: center; }
+  .buyTicket__hint {
+    height: 30px;
+    padding: 10px 0;
+    font-size: 0;
+    line-height: 0;
+    display: inline-block;
+    margin-right: 30px; }
+  .buyTicket__hintIcon {
+    display: inline-block;
+    width: 34px;
+    height: 30px;
+    vertical-align: middle; }
+  .buyTicket__hintIcon--optional {
+    background: transparent url("/source/seat-empty.png") center/cover no-repeat; }
+  .buyTicket__hintIcon--sold {
+    background: transparent url("/source/seat-sold.png") center/cover no-repeat; }
+  .buyTicket__hintIcon--selected {
+    background: transparent url("/source/seat-selected.png") center/cover no-repeat; }
+  .buyTicket__hintText {
+    font-size: 10px;
+    line-height: 30px;
+    display: inline-block;
+    vertical-align: middle; }
+  .buyTicket__screenWrap {
+    font-size: 0;
+    line-height: 0; }
+  .buyTicket__screen {
+    display: block;
+    font-size: 14px;
+    color: #000000;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    background: transparent url("../../../icons/screen.svg") 50% 0/auto 28px no-repeat; }
+  .buyTicket__cart {
+    position: fixed;
+    bottom: 54px;
+    left: 0;
+    right: 0;
+    padding-bottom: 12px;
+    border-top: 1px solid #e2e2e2;
+    background-color: #ffffff; }
+  .buyTicket__ticket {
+    width: 84px;
+    height: 38px;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #cdcdcd;
+    float: left; }
+    .buyTicket__ticket .bTTicket {
+      flex: 0 0 48px; }
+      .buyTicket__ticket .bTTicket__seat, .buyTicket__ticket .bTTicket__price {
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 18px;
+        color: #000000;
+        text-align: center; }
+      .buyTicket__ticket .bTTicket__price {
+        color: #83c57b; }
+  .buyTicket__close {
+    flex: 0 0 17px;
+    text-align: center;
+    line-height: 38px;
+    font-size: 10px; }
+  .buyTicket__btn {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+  .buyTicket__buyBtn {
+    color: #ffffff;
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ef89a0, #ec5c69);
+    border: 1px solid transparent;
+    outline: none; }

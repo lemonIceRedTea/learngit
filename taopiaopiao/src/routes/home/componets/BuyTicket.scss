@@ -1,0 +1,146 @@
+.buyTicket {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  padding-bottom: 166px;
+  overflow: scroll;
+  background-color: #ffffff;
+  &__header {
+    background-color: #999999;
+  }
+  &__content {
+    // padding-left: 16px;
+  }
+  &__info {
+    padding: 16px 0 16px 16px;
+    border-bottom: 1px solid #e2e2e2;
+  }
+  &__name {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 16px;
+    height: 16px;
+    color: #000000;
+  }
+  &__time {
+    font-size: 12px;
+    line-height: 14px;
+    height: 14px;
+    color: #666666;
+    margin-top: 12px;
+  }
+  &__seatWrap {
+  }
+  &__hintWrap {
+    border-bottom: 1px solid #e2e2e2;
+    // margin-left: -16px;
+    text-align: center;
+  }
+  &__hint {
+    height: 30px;
+    padding: 10px 0;
+    font-size: 0;
+    line-height: 0;
+    display: inline-block;
+    margin-right: 30px;
+  }
+  &__hintIcon {
+    display: inline-block;
+    width: 34px;
+    height: 30px;
+    vertical-align: middle;
+  }
+  &__hintIcon--optional {
+    background: transparent url('/source/seat-empty.png') center / cover no-repeat;
+  }
+  &__hintIcon--sold {
+    background: transparent url('/source/seat-sold.png') center / cover no-repeat;
+  }
+  &__hintIcon--selected {
+    background: transparent url('/source/seat-selected.png') center / cover no-repeat;
+  }
+  &__hintText {
+    font-size: 10px;
+    line-height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  &__screenWrap {
+    font-size: 0;
+    line-height: 0;
+    // margin-left: -16px;
+  }
+  &__screen {
+    display: block;
+    font-size: 14px;
+    color: #000000;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    background: transparent url('../../../icons/screen.svg') 50% 0/auto 28px no-repeat;
+  }
+  &__cart {
+    position: fixed;
+    bottom: 54px;
+    left: 0;
+    right: 0;
+    padding-bottom: 12px;
+    border-top: 1px solid #e2e2e2;
+    background-color: #ffffff;
+
+  }
+  &__ticket {
+    width: 84px;
+    height: 38px;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #cdcdcd;
+    float: left;
+    .bTTicket {
+      flex: 0 0 48px;
+      &__seat,
+      &__price {
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 18px;
+        color: #000000;
+        text-align: center;
+      }
+      &__price {
+        color: #83c57b;
+      }
+    }
+  }
+  &__close {
+    flex: 0 0 17px;
+    text-align: center;
+    line-height: 38px;
+    font-size: 10px;
+  }
+  &__btn {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  &__buyBtn {
+    color: #ffffff;
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, rgb(239, 137, 160), rgb(236, 92, 105));
+    border: 1px solid transparent; //自定义边框
+    outline: none; //消除默认点击蓝色边框效果
+
+  }
+}

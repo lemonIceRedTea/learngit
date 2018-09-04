@@ -1,0 +1,39 @@
+.posterSlider {
+  height: 100%;
+  overflow: hidden; }
+  .posterSlider div {
+    height: 100%; }
+  .posterSlider__image {
+    width: 100%;
+    height: 100%; }
+  .posterSlider__dots {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    bottom: 0;
+    font-size: 0;
+    line-height: 0;
+    color: transparent; }
+    .posterSlider__dots li {
+      display: inline-block;
+      padding: 5px 2px; }
+      .posterSlider__dots li::before {
+        content: '';
+        display: block;
+        width: 5px;
+        height: 5px;
+        background-color: rgba(255, 255, 255, 0.5); }
+      .posterSlider__dots li.slick-active::before {
+        content: '';
+        display: block;
+        width: 5px;
+        height: 5px;
+        background-color: #ffffff; }
+      .posterSlider__dots li button {
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+        border: 1px solid transparent;
+        outline: none; }

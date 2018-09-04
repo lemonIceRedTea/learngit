@@ -1,0 +1,99 @@
+.cityLayer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f5f5f5;
+  overflow: hidden; }
+  .cityLayer__header {
+    height: 46px;
+    width: 100%;
+    text-align: center;
+    line-height: 46px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #000000;
+    background-color: #ffffff; }
+  .cityLayer__close {
+    font-size: 10px;
+    height: 46px;
+    width: 60px;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .cityLayer__searchWrap {
+    width: 100%;
+    padding: 6px;
+    border-top: 1px solid #e2e2e2; }
+  .cityLayer__search {
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 10px;
+    color: #8e8e93;
+    background-color: #ffffff;
+    border-radius: 4px; }
+  .cityLayer__content {
+    width: 100%;
+    position: absolute;
+    top: 83px;
+    bottom: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch; }
+    .cityLayer__content .cityBlock {
+      padding: 10px 0 10px 15px; }
+      .cityLayer__content .cityBlock__title {
+        font-size: 8px;
+        line-height: 10px;
+        height: 10px;
+        color: #9a9fa0; }
+      .cityLayer__content .cityBlock__wrap {
+        display: flex;
+        flex-wrap: wrap; }
+      .cityLayer__content .cityBlock__item {
+        width: 108px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        margin-right: 10px;
+        margin-top: 15px;
+        font-size: 10px;
+        color: #999999;
+        border: 1px solid #e2e2e2;
+        background-color: #ffffff; }
+      .cityLayer__content .cityBlock:nth-child(2) {
+        padding-bottom: 15px; }
+    .cityLayer__content .cityList__label {
+      padding-left: 15px;
+      height: 27px;
+      font-size: 10px;
+      color: #333333;
+      line-height: 27px;
+      border-top: 1px solid #e2e2e2;
+      border-bottom: 1px solid #e2e2e2; }
+    .cityLayer__content .cityList__wrap {
+      padding-left: 15px;
+      background-color: #ffffff; }
+    .cityLayer__content .cityList__item {
+      height: 48px;
+      line-height: 48px;
+      font-size: 12px;
+      color: #333333; }
+      .cityLayer__content .cityList__item:nth-child(n + 2) {
+        border-top: 1px solid #e2e2e2; }
+  .cityLayer .citySideBar {
+    position: absolute;
+    top: 215px;
+    right: 5px;
+    text-align: right;
+    font-size: 10px;
+    margin: 0;
+    padding: 0; }
+    .cityLayer .citySideBar__pos {
+      line-height: 16px;
+      height: 16px; }
+      .cityLayer .citySideBar__pos a {
+        text-decoration: none;
+        color: #5fb5f9; }

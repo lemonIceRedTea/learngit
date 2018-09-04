@@ -1,0 +1,121 @@
+.movieComment {
+  &__tagsBar {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__tag {
+    font-size: 14px;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 15px;
+    border-radius: 14px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #bebebe;
+    color: #333333;
+  }
+  &__tag--active {
+    border: 1px solid #ef819e;
+    color: #ef819e;
+  }
+  &__commentList {
+    margin: 0;
+    padding: 14px 0 0 6px;
+    .commentItem {
+      padding-bottom: 30px;
+      &__userInfo {
+        display: flex;
+      }
+      &__userIcon {
+        width: 50px;
+        height: 50px;
+        background-image: url('/source/movie/asset1.jpeg');
+        background-color: transparent;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+      }
+      &__user {
+        flex: 1;
+        margin-left: 20px;
+        align-self: center;
+      }
+      &____userName, {
+        display: block;
+        height: 18px;
+        line-height: 18px;
+        font-size: 12px;
+        font-weight: bold;
+        color: #000000;
+      }
+      &__moreOpt {
+        float: right;
+        height: 18px;
+        line-height: 18px;
+        font-size: 12px;
+        font-weight: bold;
+        color: rgb(153,153,153);
+      }
+      &__star {
+        margin-top: 5px;
+        height: 12px;
+        display: inline-block;
+      }
+      &__starScore {
+        font-size: 14px;
+        line-height: 14px;
+        height: 14px;
+        font-weight: bold;
+        color: #f2a95d;
+      }
+      &__comment {
+        margin-top: 9px;
+        text-align: justify;
+        font-size: 14px;
+        line-height: 24px;
+        color: #545454;
+      }
+      &__footer {
+        height: 16px;
+        margin-top: 5px;
+      }
+      &__date {
+        font-size: 12px;
+        line-height: 16px;
+        color: #bcbcbc;
+        vertical-align: middle;
+      }
+      &__support,
+      &__message {
+        margin-left: 12px;
+        display: inline-block;
+        float: right;
+        i {
+          display: inline-block;
+          vertical-align: middle;
+          width: 16px;
+          height: 16px;
+          background: transparent url('../../../icons/zan-o.svg') center / cover no-repeat;
+        }
+        span {
+          display: inline-block;
+          margin-left: 5px;
+          height: 16px;
+          line-height: 16px;
+          vertical-align: middle;
+        }
+      }
+      &__support--zan {
+        i {
+          background: transparent url('../../../icons/zan-solid.svg') center / cover no-repeat;
+        }
+      }
+      &__message {
+        i {
+          background: transparent url('../../../icons/user.png') center / cover no-repeat;
+        }
+      }
+    }
+  }
+}

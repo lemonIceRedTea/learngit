@@ -1,0 +1,76 @@
+.my {
+  &__header {
+    background-color: darkslateblue;
+  }
+  &__info {
+    padding: 0 25px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+  }
+  &__avatar {
+    width: 70px;
+    height: 70px;
+    background-image: url('/source/avatar.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    flex: 0 0 70px;
+    margin-right: 20px;
+  }
+  &__detail {
+    flex: 1;
+  }
+  &__name {
+    font-size: 20px;
+    color: #ffffff;
+    height: 28px;
+    line-height: 28px;
+    font-weight: bold;
+  }
+  &__focus {
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 6px;
+    color: rgba(#ffffff, 0.8);
+  }
+  &__focusOther,
+  &__focusSe,
+  &__focusMe {
+    display: inline-block;
+  }
+  &__focusSe {
+    margin: 0 20px;
+  }
+  &__member {
+    background-color: rgb(90, 93, 125);
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 5px;
+    display: inline-block;
+    padding: 0 8px;
+    border-radius: 8px;
+    color: #ffffff;
+  }
+  .mC {
+    &__block {
+      height: 58px;
+      padding: 0 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__text {
+      font-size: 16px;
+      line-height: 58px;
+      font-weight: 400;
+      color: #333333;
+    }
+    &__num {
+      font-size: 14px;
+      line-height: 58px;
+      color: #999999;
+    }
+  }
+}

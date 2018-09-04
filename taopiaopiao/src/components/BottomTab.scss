@@ -1,0 +1,44 @@
+.bottomTab {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background-color: #fff;
+  height: 48px;
+  display: flex;
+  border-top: 1px solid #e2e2e2;
+  &__icon {
+    height: 22px;
+    width: 22px;
+  }
+  &__icon--movie {
+    background: transparent url('../icons/movie.png') center / cover no-repeat
+  }
+  &__icon--user {
+    background: transparent url('../icons/user.png') center / cover no-repeat
+  }
+  &__text {
+    display: inline-block;
+    margin-top: 6px;
+    font-size: 10px;
+    color: #666666;
+  }
+  &__item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+  &__item--active {
+    .bottomTab__icon--movie {
+      background: transparent url('../icons/movie-solid.png') center / cover no-repeat;
+    }
+    .bottomTab__icon--user {
+      background: transparent url('../icons/user-solid.png') center / cover no-repeat;
+    }
+    .bottomTab__text {
+      color: #ff4c64;
+    }
+  }
+}

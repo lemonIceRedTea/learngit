@@ -1,0 +1,11 @@
+.tStar {
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0; }
+  .tStar__back, .tStar__front {
+    background-image: url("../icons/star-o.svg");
+    background-position: 0 center;
+    background-repeat: repeat-x;
+    background-color: transparent; }
+  .tStar__front {
+    background-image: url("../icons/star.svg"); }
