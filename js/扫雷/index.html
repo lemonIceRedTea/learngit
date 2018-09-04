@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>扫雷</title>
+    <link rel="stylesheet" href="./src/css/index.css">
+</head>
+
+<body>
+    <!-- 定义包裹层 -->
+    <div class="wrapper">
+        <!-- 定义分数板 -->
+        <div class="score_board">
+            地雷：
+            <span class="score"></span>
+            用时：
+            <span class="time"></span>
+            难度：
+            <span class="rate_board"></span>
+        </div>
+        <!-- 定义地图 -->
+        <ul class="map">
+            <!-- <li class="mine">1</li>
+            <li class="flag">2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li> -->
+        </ul>
+        <!-- 定义开始游戏、成功、失败、选难度界面 -->
+        <div class="info">
+            <button type="button" class="btn"></button>
+            <div class="begin show">
+                <img class="beginImg" src="./src/images/startGame.png" alt="">
+                <div class="beginBtn"></div>
+            </div>
+            <img class="over" src="./src/images/over.jpg" alt="">
+            <img class="success" src="./src/images/success.png" alt="">
+            <div class="rate">
+                <label for="">
+                    初级：
+                    <input type="radio" name="rt" value="1" checked> 中级：
+                    <input type="radio" name="rt" value="2"> 高级：
+                    <input type="radio" name="rt" value="3">
+                </label>
+            </div>
+        </div>
+
+    </div>
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>

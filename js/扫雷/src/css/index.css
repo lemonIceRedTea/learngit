@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+html, body, .wrapper {
+    width: 100%;
+    height: 100%;
+}
+.wrapper {
+    position: relative;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+/* 地图样式 */
+.wrapper .map {
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+    margin: 0px auto;
+    /* transform: translate(-50%, -50%); */
+    background-image: url('../images/cao.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.wrapper .info {
+    position: absolute;
+    width: 50%;
+    min-width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.wrapper .info img {
+    width: 100%;
+    display: none;
+    z-index: 10;
+}
+.wrapper .info .begin {
+    width: 100%;
+    overflow: hidden;
+    display: none;
+}
+.wrapper .info .begin .beginBtn {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 40%;
+    cursor: pointer;
+}
+.wrapper .info .begin .beginImg {
+    display: block;
+}
+.wrapper .info .show {
+    display: block;
+}
+.wrapper .info .hide {
+    display: none;
+}
+/* 格子样式 */
+.wrapper .map li {
+    float: left;
+    border: 1px solid #ccc;
+    text-align: center;
+    /* text-indent: -99999px; */
+}
+.wrapper .map::after {
+    content: ' ';
+    display: table;
+    clear: both;
+}
+/* 地雷样式 */
+.mine {
+    background-image: url('../images/dilei.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* 红旗样式 */
+.flag {
+    background-image: url('../images/hongqi.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* 安全样式 */
+.safe {
+    background: rgba(0, 0, 0, 0.3);
+    text-indent: 0;
+}
+/* 包裹层 */
+.wrap {
+    visibility: hidden;
+}
+/* 关闭按钮 */
+.btn {
+    position: absolute;
+    display: none;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background-image: url('../images/closeBtn.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: 0;
+    z-index: 99;
+}
+/* 分数栏 */
+.wrapper .score_board {
+    margin: 0 auto;
+    width: 40%;
+    min-width: 350px;
+    height: 50px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 50px;
+    color: #fff;
+    background: rgba(0, 0, 0, .3);
+}
+.wrapper .score_board .score, .time {
+    display: inline-block;
+    margin-right: 10px;
+}
+/* 难度框 */
+.rate {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+.rate label input{
+    cursor: pointer;
+}
+.wrapper .hide {
+    display: none;
+}
+.wrapper .show {
+    display: block;
+}
